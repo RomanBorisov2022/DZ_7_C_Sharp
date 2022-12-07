@@ -32,7 +32,7 @@ double[] GetAverage(int[,] array)
             sum = sum + array[i, j];
             
         }
-        newArray[j] = sum / array.GetLength(0);      
+        newArray[j] = Math.Round(sum / array.GetLength(0), 1);      
     }
     return newArray;    
 }
